@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clyde Protection — Luau Obfuscator</title>
+  <title>Ethone Protect — Luau Obfuscator</title>
   <meta name="description" content="Luau script obfuscation and bytecode virtualization for Roblox projects.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,17 +58,36 @@
           <h2>Source code</h2>
         </div>
         <div class="editor-wrap">
-          <textarea id="input-editor" spellcheck="false" placeholder="-- Paste your raw Luau source code here...&#10;&#10;local x = 42&#10;print('Hello World')">-- Clyde Luau Obfuscator
--- Click the button below to compile and protect this example script!
+          <textarea id="input-editor" spellcheck="false" placeholder="-- Paste your raw Luau source code here...&#10;&#10;local x = 42&#10;print('Hello World')">-- Ethone Protect
+-- Compile this example to test the Luau obfuscator.
 
-local message = "Hello, world!"
-print(message)
+local Players = game:GetService("Players")
 
-local function square(n)
-    return n * n
+local config = {
+    Name = "Ethone Protect",
+    Version = "1.0.0",
+    Enabled = true
+}
+
+local function calculatePower(value, multiplier)
+    return value * multiplier
 end
 
-print("Square of 5 is: " .. tostring(square(5)))</textarea>
+local function displayStatus()
+    if not config.Enabled then
+        warn("Protection is currently disabled.")
+        return
+    end
+
+    local result = calculatePower(25, 4)
+
+    print(config.Name .. " v" .. config.Version)
+    print("Protection successfully initialized.")
+    print("Calculated power: " .. tostring(result))
+    print("Players online: " .. tostring(#Players:GetPlayers()))
+end
+
+displayStatus()</textarea>
         </div>
       </section>
 
@@ -176,7 +195,7 @@ print("Square of 5 is: " .. tostring(square(5)))</textarea>
         <span id="status-title" style="display: none;">Ready</span>
       </div>
       <div class="terminal-body" id="terminal-console">
-        <div class="console-line line-system">[SYSTEM] Clyde Obfuscator Web-Engine initialized. Ready for script analysis.</div>
+        <div class="console-line line-system">[SYSTEM] Ethone Protect Web-Engine initialized. Ready for script analysis.</div>
       </div>
     </section>
 
