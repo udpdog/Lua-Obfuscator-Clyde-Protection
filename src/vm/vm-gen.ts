@@ -3649,13 +3649,18 @@ export function generateVM(chunk: BytecodeChunk, options: VMGenOptions = {}): st
     const fpHex = fingerprint.toString(16).padStart(8, '0').toUpperCase();
 
     const artLines = [
-      `   ___ _         _       ___         _          _   _           __   ___ `,
-      `  / __| |_  _ __| |___  | _ \\_ _ ___| |_ ___ __| |_(_)___ _ _   \\ \\ / / |`,
-      ` | (__| | || / _\` / -_) |  _/ '_/ _ \\  _/ -_) _|  _| / _ \\ ' \\   \\ V /| |`,
-      `  \\___|_|\\_, \\__,_\\___| |_| |_| \\___/\\__\\___\\__|\\__|_\\___/_||_|   \\_/ |_|`,
-      `         |__/`,
+      `   ,ggggggg,                                                         `,
+      ` ,dP""""""Y8b   I8   ,dPYb,                                          `,
+      ` d8'    a  Y8   I8   IP'\`Yb                                         `,
+      ` 88     "Y8P'88888888I8  8I                                          `,
+      ` \`8baaaa        I8   I8  8'                                         `,
+      `,d8P""""        I8   I8 dPgg,     ,ggggg,    ,ggg,,ggg,    ,ggg,     `,
+      `d8"             I8   I8dP" "8I   dP"  "Y8ggg,8" "8P" "8,  i8" "8i    `,
+      `Y8,            ,I8,  I8P    I8  i8'    ,8I  I8   8I   8I  I8, ,8I    `,
+      `\`Yba,,_____,  ,d88b,,d8     I8,,d8,   ,d8' ,dP   8I   Yb, \`YbadP'  `,
+      `  \`"Y8888888  8P""Y888P     \`Y8P"Y8888P"   8P'   8I   \`Y8888P"Y888`,
       ``,
-      `  https://clydeprotectionde.cloud`,
+      `  https://protect.ethone.eu`,
       `  build ${fpHex}`,
     ];
 
