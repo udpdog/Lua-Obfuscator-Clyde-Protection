@@ -3687,14 +3687,19 @@ export function generateRegVM(chunk: RegBytecodeChunk, options: RegVMGenOptions 
 
   if (!options._noWatermark) {
     const art = [
-      `_________ .__            .___       __________                __                 __  .__                ____   ____________  `,
-      `\\_   ___ \\|  | ___.__. __| _/____   \\______   \\_______  _____/  |_  ____   _____/  |_|__| ____   ____   \\   \\ /   /\\_____  \\ `,
-      `/    \\  \\/|  |<   |  |/ __ |/ __ \\   |     ___/\\_  __ \\/  _ \\   __\\/ __ \\_/ ___\\   __\\  |/  _ \\ /    \\   \\   Y   /  /  ____/ `,
-      `\\     \\___|  |_\\___  / /_/ \\  ___/   |    |     |  | \\(  <_> )  | \\  ___/\\  \\___|  | |  (  <_> )   |  \\   \\     /  /       \\ `,
-      ` \\______  /____/ ____\\____ |\\___  >  |____|     |__|   \\____/|__|  \\___  >\\___  >__| |__|\\____/|___|  /    \\___/   \\_______ \\`,
-      `        \\/     \\/         \\/    \\/                                     \\/     \\/                    \\/                     \\/`,
+      `   ,ggggggg,                                                         `,
+      ` ,dP""""""Y8b   I8   ,dPYb,                                          `,
+      ` d8'    a  Y8   I8   IP'\`Yb                                         `,
+      ` 88     "Y8P'88888888I8  8I                                          `,
+      ` \`8baaaa        I8   I8  8'                                         `,
+      `,d8P""""        I8   I8 dPgg,     ,ggggg,    ,ggg,,ggg,    ,ggg,     `,
+      `d8"             I8   I8dP" "8I   dP"  "Y8ggg,8" "8P" "8,  i8" "8i    `,
+      `Y8,            ,I8,  I8P    I8  i8'    ,8I  I8   8I   8I  I8, ,8I    `,
+      `\`Yba,,_____,  ,d88b,,d8     I8,,d8,   ,d8' ,dP   8I   Yb, \`YbadP'  `,
+      `  \`"Y8888888  8P""Y888P     \`Y8P"Y8888P"   8P'   8I   \`Y8888P"Y888`,
       ``,
-      `https://clydeprotectionde.cloud | ClydeProtection Just like VMProtect, but for Lua.`,
+      `https://protect.ethone.eu | EthoneProtect Just like VMProtect, but for Lua.`,
+      `EthoneProtect is forked from ClydeProtection`,
     ];
     output = `--[[\n${art.join('\n')}\n]]\n` + output;
   }
